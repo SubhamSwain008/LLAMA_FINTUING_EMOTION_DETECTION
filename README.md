@@ -4,11 +4,9 @@ Instead of using off-the-shelf sentiment tools, I fine-tuned LLaMA 3.2 (1B) on a
 🧠 Core Model (LLM Backbone)
 LLaMA 3.2 serves as the backbone. Its compact 1B parameter size makes it lightweight and efficient for deployment, while fine-tuning aligns it with the task of recognizing subtle emotional cues in sentences. This ensures the model captures both explicit expressions (“I am furious”) and implicit signals (“I can’t believe this happened again”).
 
-📊 Data Engineering (Emotion Annotations)
-The dataset was engineered to balance real-world dialogues, social media text, and scripted conversations. Each text segment was paired with emotion tags. Heavy preprocessing—like removing noise, normalizing slang, and handling code-switching (English + Hindi)—was done to make the model robust in real applications.
 
 ⚡ Pipeline Integration
-Training loop: Hugging Face transformers + PEFT/LoRA for efficient fine-tuning.
+Training loop: PEFT/LoRA for efficient fine-tuning.
 
 
 🚀 End Goal
